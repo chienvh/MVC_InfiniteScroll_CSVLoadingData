@@ -1,0 +1,10 @@
+﻿@model Dictionary<int, MVC_InfiniteScroll_CSVLoadingData.Models.Student>
+@foreach (var stu in Model)
+{
+    <tr>
+        <td>@stu.Key </td>
+        <td>@stu.Value.ID</td>
+        <td>@stu.Value.Name</td>
+        <td>@stu.Value.Email</td>
+    </tr>
+}
